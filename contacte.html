@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KenzZMotorSport | Contacte</title>
+  <link rel="stylesheet" href="practica4.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Torna a l'inici">
+        <img
+          class="brand__logo"
+          src="https://newsroom.porsche.com/dam/jcr%3A83d3c489-9a28-4469-bd6b-219a15b899c2/b-titelShowroom2.jpeg"
+          alt="Logo KenzZMotorSport"
+        />
+        <div class="brand__text">
+          <h1>KenzZMotorSport</h1>
+          <p>Contacte</p>
+        </div>
+      </a>
+    </div>
+
+    <nav class="nav" aria-label="Navegació principal">
+      <!-- UL per guardar les diferents pagines del menu -->
+
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="taules.html">Taules</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a class="active" href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="block">
+      <h2>Demanar cita</h2>
+      <p class="muted">Omple el formulari i et contactarem.</p>
+
+      <div class="two-col">
+        <form action="#" method="post" class="form">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" type="text" required placeholder="El teu nom" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="nom@exemple.com" />
+
+          <label for="servei">Servei</label>
+          <select id="servei" name="servei">
+            <option value="venda">Venda</option>
+            <option value="postvenda">Postvenda</option>
+            <option value="taller">Taller</option>
+            <option value="atencio">Atenció al públic</option>
+          </select>
+
+          <label for="missatge">Missatge</label>
+          <textarea id="missatge" name="missatge" rows="6" required placeholder="Explica què necessites..."></textarea>
+
+          <div class="form-actions">
+            <button type="submit">Enviar</button>
+            <button type="reset" class="btn-reset">Netejar</button>
+          </div>
+        </form>
+
+        <div class="map">
+          <h3>Localització</h3>
+          <p class="muted">Mapa incrustat (Google Maps).</p>
+          <iframe
+            title="Mapa KenzZMotorSport"
+            src="https://www.google.com/maps?q=Carrer%20Verge%20de%20F%C3%A0tima%205%2C%20Rub%C3%AD&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Joan Gracia. Tots els drets reservats.</p>
+  </footer>
+</body>
+</html>
+
